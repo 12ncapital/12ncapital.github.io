@@ -3,12 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>12n Capital</title>
+  <title>12n Capital | ビジネスオーナーの視座</title>
+  <meta name="description" content="エンジニアリングの構造解析と10年の市場運用から導かれた、事業の堀（モート）と資本効率の数理。">
+  <style>
+    :root {
+      --bg: #090c10;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #388bfd;
+      --accent-hover: #58a6ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 20px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .book-hero {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      margin-bottom: 64px;
+    }
+    @media (min-width: 680px) {
+      .book-hero {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .book-cover {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+    .book-cover img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .book-info {
+      flex: 1;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: rgba(56, 139, 253, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(56, 139, 253, 0.3);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.35;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .tagline {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+    }
+    .btn-primary:hover {
+      background: #ffffff;
+      opacity: 0.95;
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      color: var(--tex);
+    }
+    section {
+      margin-bottom: 56px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .author-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .author-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .author-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #0f1115; color: #e6edf3;">
-  <div style="text-align: center;">
-    <h1 style="font-size: 2rem; margin-bottom: 0.5rem; letter-spacing: 0.05em;">12n Capital</h1>
-    <p style="color: #8b949e;">Systems, Capital, and Engineering.</p>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">12n Capital</div>
+    </header>
+
+    <main>
+      <article class="book-hero">
+        <div class="book-cover">
+          <img src="images/cover_front_ja.jpg" alt="ビジネスオーナーの視座 書影">
+        </div>
+        <div class="book-info">
+          <span class="badge">Kindle Edition</span>
+          <h1>ビジネスオーナーの視座</h1>
+          <p class="tagline">制御開発エンジニアの思考と10年の市場運用から導く、持続的競争優位性（モート）と資本効率の数理。</p>
+          <p style="font-size: 0.92rem; color: var(--text-muted);">
+            不確実な市場環境下において、企業の構造的優位性をいかに見極め、資本家としての立場を長期的に確立するか。感情を排した構造解析と自律運用のフレームワークを提示します。
+          </p>
+          <div class="cta-group">
+            <a href="https://www.amazon.co.jp" class="btn btn-primary" target="_blank" rel="noopener">Amazonで見る</a>
+            <a href="https://github.com/12ncapital/business-owners-perspective" class="btn btn-secondary" target="_blank" rel="noopener">公式GitHubリポジトリ</a>
+          </div>
+        </div>
+      </article>
+
+      <section>
+        <h2>著者について</h2>
+        <div class="author-card">
+          <div class="author-name">一条 颯人（いちじょう はやと）</div>
+          <div class="author-desc">
+            自動車業界にて制御開発・機構設計・品質保証のエンジニアリングに従事したのち、専業の個人投資家へ転身。<br>
+            独立後、約10年間にわたり市場での自律運用を継続。企業の構造的優位性（モート）や資本効率に着目した長期投資を実践しつつ、知的財産のシステム化および執筆活動を行っている。
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 12n Capital. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
